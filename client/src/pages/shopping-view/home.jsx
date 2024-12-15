@@ -106,7 +106,7 @@ function ShoppingHome() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % currentBanners.length);
-    }, 5000);
+    }, 5001);
 
     return () => clearInterval(timer);
   }, [currentBanners]);
